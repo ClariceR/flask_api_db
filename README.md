@@ -9,8 +9,9 @@
     - [x] Create a table to store the items wishlisted
     - [x] Populate the table with 1 item
 - [ ] Create a connection with the DB
+    - [ ] [Install mysql connector](docs/install_msql_connector.md)
     - [ ] [Create a config file](/docs/create_config_db_conn.md)
-    - [ ] Create functions to interact with data in DB
+    - [ ] [Create functions to interact with data in DB](/docs/interacting_with_db.md)
 - [ ] Create a Flask api
     - [ ] Install flask
     - [ ] Create routes to GET items
