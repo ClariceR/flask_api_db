@@ -24,10 +24,22 @@ def get_all_records():
         cursor = db_connection.cursor()
         print('Connected to', db_name)
 
+        query = '''SELECT * FROM wl_items'''
+        cursor.execute(query)
+        items = cursor.fetchall()
+
+        # if we want to see it
+        for item in items:
+            print(item)
+
         cursor.close()
     except Exception as e:
         logging.exception('Failed to connect to the DB')
         raise DBConnectionError('Failed')
+    finally:
+        if db_connection:
+            db_connection.close()
+            print('DB connection is closed')
 
 
 get_all_records()

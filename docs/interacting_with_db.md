@@ -39,11 +39,7 @@ except Exception as e:
 
 ## Creating a connection to the DB
 
-- Create a function to connect with the db name as a parameter:
-  
-```buildoutcfg
-def connect_to_db(db_name):
-```
+- Create a function to connect with the db that takes the db name as a parameter
 - Inside we call the function connect from mysql.connection and pass the
 db details. We then return the connection.
   
@@ -57,11 +53,5 @@ def connect_to_db(db_name):
     return connection
 ```
 
-- Next we create the function to get the records:
+- Next we create the [function to get the records](/docs/getting_all_records.md)
 
-Inside a try block we:
-  - define our db name
-  - open a connection by calling the connect_to_db function and 
-saving it in a variable db_connection
-  - open a cursor, this is what allows us to interact with the DB
-    (remember that at the end, we need to close the cursor)
