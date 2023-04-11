@@ -54,4 +54,5 @@ def connect_to_db(db_name):
 ```
 
 - Next we create the [function to get the records](/docs/getting_all_records.md)
+- How to create a [function to insert a new item in the table](/docs/inserting_a_new_item.md)
 
