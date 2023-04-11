@@ -5,9 +5,9 @@
 - [x] Create project folder
 - [x] Create Git version control
 - [x] Create repo in GitHub
-- [ ] [Create a DB in MySQLWorkbench](/docs/create_db_mysql.md)
-- [ ] Create a table to store the items wishlisted
-- [ ] Populate the table with 1 item
+- [x] [Create a DB in MySQLWorkbench](/docs/create_db_mysql.md)
+    - [x] Create a table to store the items wishlisted
+    - [x] Populate the table with 1 item
 - [ ] Create a Flask api
 - [ ] Create routes to GET items
 - [ ] Create routes to ADD items
