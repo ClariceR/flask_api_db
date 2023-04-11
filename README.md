@@ -8,9 +8,9 @@
 - [x] [Create a DB in MySQLWorkbench](/docs/create_db_mysql.md)
     - [x] Create a table to store the items wishlisted
     - [x] Populate the table with 1 item
-- [ ] Create a connection with the DB
-    - [ ] [Install mysql connector](docs/install_msql_connector.md)
-    - [ ] [Create a config file](/docs/create_config_db_conn.md)
+- [x] Create a connection with the DB
+    - [x] [Install mysql connector](docs/install_msql_connector.md)
+    - [x] [Create a config file](/docs/create_config_db_conn.md)
     - [ ] [Create functions to interact with data in DB](/docs/interacting_with_db.md)
 - [ ] Create a Flask api
     - [ ] Install flask
