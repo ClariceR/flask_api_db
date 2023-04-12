@@ -49,7 +49,7 @@ new_item = {
 }
 
 
-def insert_record_to_db(new_item):
+def insert_record_to_db(item):
     try:
         db_name = 'wishlist_app'
         table_name = 'wl_items'
@@ -74,5 +74,29 @@ def insert_record_to_db(new_item):
             print('DB connection is closed')
 
 
-insert_record_to_db(new_item)
+def delete_item(id):
+    try:
+        db_name = 'wishlist_app'
+        table_name = 'wl_items'
+        db_connection = _connect_to_db(db_name)
+        cursor = db_connection.cursor()
+
+        query = f'''DELETE FROM {table_name}
+                    WHERE id = {id}'''
+
+        cursor.execute(query)
+        db_connection.commit()
+
+        cursor.close()
+    except Exception:
+        logging.exception('Failed to connect to the DB')
+        raise DBConnectionError('Failed')
+    finally:
+        if db_connection:
+            db_connection.close()
+            print('DB connection closed')
+
+
+# insert_record_to_db(new_item)
+delete_item(5)
 get_all_records()

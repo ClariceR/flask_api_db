@@ -1,4 +1,4 @@
-## How do I insert a new item in my table?
+## How do I insert a new item in a table?
 
 *We need to create a function and accept the new item as a parameter*
 *It will also be structured in the try/ except/ finally blocks*
