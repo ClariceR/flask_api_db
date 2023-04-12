@@ -13,11 +13,12 @@
     - [x] [Create a config file](/docs/create_config_db_conn.md)
     - [ ] [Create functions to interact with data in DB](/docs/interacting_with_db.md)
 - [ ] Create a Flask api
-    - [ ] Install flask
-    - [ ] Create routes to GET items
+    - [x] Install flask
+    - [x] Create routes to GET items
+    - [x] Create routes to GET item
     - [ ] Create routes to ADD items
     - [ ] Create routes to UPDATE items
     - [ ] Create routes to DELETE items
 - [ ] Test the routes
-- [ ] Connect to DB
+- [x] Connect to DB
 

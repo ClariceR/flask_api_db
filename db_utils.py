@@ -1,5 +1,5 @@
 import mysql.connector
-from config_db_connection import HOST, USER
+from config_db import HOST, USER
 import logging
 
 
@@ -40,6 +40,8 @@ def get_all_records():
         if db_connection:
             db_connection.close()
             print('DB connection is closed')
+
+    return items
 
 
 new_item = {
@@ -132,5 +134,5 @@ def update_item(item, id):
 
 # insert_record_to_db(new_item)
 # delete_item(5)
-update_item(updated_item, 2)
+# update_item(updated_item, 2)
 get_all_records()
