@@ -21,9 +21,8 @@ def get_items():
 @app.route('/items/<int:id>')
 def get_item_by_id(id):
     items = get_all_records()
-    for item in items:
-        if item[0] == id:
-            return item[1]
+    item_found = [item[1] for item in items if item[0] == id]
+    return item_found
 
 
 if __name__ == '__main__':
