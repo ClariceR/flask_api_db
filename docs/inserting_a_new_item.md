@@ -7,7 +7,7 @@
 - create a variable for db name so we can pass it to the connect function
 - then we open the connection and save it in a variable
 - we also need create the cursor to interact
-- now we can save our query in a variable. 
+- then save our query in a variable. 
 
 > Even though the string values in the `new item dict` are strings,
 > we still need to add `''` around the value we are getting from the dict
